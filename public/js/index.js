@@ -2,13 +2,7 @@
 
 	socket.on('connect', function () {
 		console.log('Connected to Server.');
-
-		socket.emit('createMessage', {
-			from: 'Jamshed',
-			text: 'Hey, This is Jaq.'
-		});
 	});
-
 
 	socket.on('disconnect', function ()  {
 		console.log('Disconnected from Server.');
